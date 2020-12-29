@@ -1,0 +1,79 @@
+.container {
+    width: 80%;
+    height: 200px;
+    background: rgb(148, 129, 235);
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+    min-width: 400px;
+    min-height: 200px;
+    max-width: 500px;
+    max-height: 500px;
+  }
+  .error{
+    font-family: Helvetica, sans-serif;
+    font-size: x-large;
+    color: rgb(223, 81, 192);
+    font-weight: 500;
+    text-align: center;
+    background-color: #b1b7d6;
+
+}
+  .students {
+
+    height: 200px;
+    background: rgba(80, 82, 240, 0.70);
+    float: left;
+    border-radius: 25px;
+
+  }
+  
+  .cats {
+    height: 200px;
+    background: rgba(159, 76, 197, 0.70);
+    border-radius: 25px;
+
+  }
+
+.container form label{
+    font-family: Helvetica, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container form input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	flex-grow: 5;
+    height: 25px;
+    padding-left: 5px;
+    line-height: 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #9f9f9f54;
+}
+
+.container form button {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background: #192c8d;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}

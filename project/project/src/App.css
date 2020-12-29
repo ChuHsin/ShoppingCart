@@ -1,0 +1,341 @@
+.App {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header {
+  background-color: #d9ebd9;
+  min-height: 100vh;
+  display: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.content {
+display: flex;
+position: static;
+  }
+
+.products-interface {
+    float:left;
+    width: 15em;
+    overflow-y: auto;
+    margin-right: 200px;
+    }
+
+.cart-interface {
+  font-size: large;
+  position: fixed;
+  margin-left: 30em;
+  background-color: #598d64;
+  border-radius: 2%;
+  border: 5px solid #416646;
+  
+}   
+
+
+.product-card
+{
+  font-size: medium;
+  color: #282c34;
+  height:10em;
+  width:10em;
+  margin: 15px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display: inline-flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  3px 3px 9px #e1e1e3, -3px -3px 9px #ffffff;
+  box-shadow:  3px 3px 9px #e1e1e3, -3px -3px 9px #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image
+{
+  height:10em;
+  width:10em;
+  position:Absolute;
+  top:0px;
+  bottom: 0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size:cover;
+  background-repeat:no-repeat;
+  opacity: 0.7;
+}
+
+.product-description
+{
+  background-color: #FAFAFC;
+  height:7em;
+  width:10em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+  opacity: 0.8;
+}
+
+.product-social-icons
+{
+  width:6em;
+  height:1em;
+  color: #202f33;
+  background-color:rgb(196, 196, 196);
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  border-radius:5px;
+  -webkit-box-shadow:  1px 1px 1.4px #e1e1e3, -1px -1px 1.4px #ffffff;
+  box-shadow:  1px 1px 1.4px #e1e1e3, -1px -1px 1.4px #ffffff;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.product-card:hover .product-description
+{
+  height:1em;
+  padding:0px 1em;
+  opacity: 0.3;
+
+}
+.product-card:hover .product-image
+{
+  height:9em;
+  opacity: 0.7;
+
+}
+
+.product-card:hover .product-social-icons
+{
+  background-color:white;
+}
+
+.product-card:hover .product-social-icons:hover
+{
+  background-color:rgb(118, 118, 177);
+  cursor:pointer;
+}
+
+.product-image-title
+{
+text-align:center;
+position:Relative;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:rgba(137, 240, 148, 0.979);
+font-size: medium;
+font-weight: bold;
+text-decoration-color: #90f89e;
+}
+
+.product-card:hover .product-image-title
+{
+  color: #202f33;
+  opacity: 1;
+}
+
+li
+{
+  list-style-type: none;
+  margin: 20px;
+}
+.item-name
+{
+  display: flex;
+}
+.cart
+{
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+}
+.item-amount
+{
+  float: left;
+  display: inline;
+  margin-right: 20px;
+}
+.item-unit-price
+{
+  display: inline;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+.item-price
+{
+  float: right;
+  display: inline;
+}
+
+.total-price
+{
+  float: right;
+}
+
+.logout-button
+{
+  margin-left: 50px;
+}
+
+.error-message
+{
+  color: red;
+}
+
+.title-text
+{
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px;
+  color: #124d34;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 10px;
+  letter-spacing: 4px
+}
+
+button
+{
+  display:inline-block;
+  padding:0.46em 1.6em;
+  border:0.1em solid #000000;
+  margin:0 0.2em 0.2em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  background-color:rgb(34, 73, 29);
+  text-align:center;
+  transition: all 0.15s;
+}
+button:hover{
+  text-shadow: 0 0 2em rgba(255,255,255,1);
+  color:rgb(34, 73, 29);
+  border-color:rgb(34, 73, 29);
+  background-color:#ffffff;
+
+  }
+
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #296149;
+  font-size: 20px;
+}
+
+.login-box a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #124d34;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box h2 {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #124d34;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #33583b;
+  color: #fff;
+  border-radius: 5px;
+
+}
